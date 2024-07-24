@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://84uunl3ejeyg"]
+
+[ext_resource type="PackedScene" uid="uid://ci10ooc7inv70" path="res://person.tscn" id="1_rls2o"]
+[ext_resource type="Texture2D" uid="uid://dqimweqflkpha" path="res://weon.jpg" id="2_stkgk"]
+[ext_resource type="Texture2D" uid="uid://cjbnsldhwrnyi" path="res://nomms.png" id="3_y1bd3"]
+[ext_resource type="Texture2D" uid="uid://biqkgtw1g0sye" path="res://eric.jpg" id="4_f2hbl"]
+[ext_resource type="Script" path="res://gamer.gd" id="4_jlptl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Weon" parent="." instance=ExtResource("1_rls2o")]
+texture = ExtResource("2_stkgk")
+first_name = "Weon"
+age = 14
+
+[node name="NoMMS" parent="." instance=ExtResource("1_rls2o")]
+position = Vector2(514, 219)
+texture = ExtResource("3_y1bd3")
+first_name = "No Mames"
+age = 18
+
+[node name="Eric" parent="." instance=ExtResource("1_rls2o")]
+position = Vector2(363, 458)
+texture = ExtResource("4_f2hbl")
+script = ExtResource("4_jlptl")
+gamer_tag = "Forman"
+first_name = "Eric"
+age = 17

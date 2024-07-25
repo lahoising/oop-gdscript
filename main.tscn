@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://84uunl3ejeyg"]
+[gd_scene load_steps=7 format=3 uid="uid://84uunl3ejeyg"]
 
 [ext_resource type="PackedScene" uid="uid://ci10ooc7inv70" path="res://person.tscn" id="1_rls2o"]
 [ext_resource type="Texture2D" uid="uid://dqimweqflkpha" path="res://weon.jpg" id="2_stkgk"]
 [ext_resource type="Texture2D" uid="uid://cjbnsldhwrnyi" path="res://nomms.png" id="3_y1bd3"]
 [ext_resource type="Texture2D" uid="uid://biqkgtw1g0sye" path="res://eric.jpg" id="4_f2hbl"]
 [ext_resource type="Script" path="res://gamer.gd" id="4_jlptl"]
+[ext_resource type="Script" path="res://third-person.gd" id="4_li1u1"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,6 +17,7 @@ age = 14
 [node name="NoMMS" parent="." instance=ExtResource("1_rls2o")]
 position = Vector2(514, 219)
 texture = ExtResource("3_y1bd3")
+script = ExtResource("4_li1u1")
 first_name = "No Mames"
 age = 18
 

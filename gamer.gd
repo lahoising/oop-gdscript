@@ -30,7 +30,6 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int):
   if event.is_action_pressed("Tag"):
     post_tag()
 
-
 # -----------------------------
 # NOTES:
 # 1. Be careful with inheritance. Too much of it can lead to complicated problems.
